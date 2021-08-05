@@ -18,26 +18,26 @@
     <div class="row">
       <div class="col">
         <form>
-          <label for="front">Front of card</label>
-          <textarea id="front"
-            class="form-control"
-            rows="4"></textarea>
-          <label for="back">Back of card</label>
-          <textarea class="form-control"
-            id="back"
-            rows="3"></textarea>
-          <button type="button"
-            class="btn btn-primary btn-lg btn-block mt-3"
-            id="btnSave">Save card</button>
+          <label for="frontCard">Front of Card (Term or Question)</label>
+          <textarea id="frontCard" class="form-control mb-3" rows="3"></textarea>
+          
+          <label for="backCard">Back of Card (Definition or Answer)</label>
+          <textarea id="backCard" class="form-control" rows="3"></textarea>
+          
+          <button type="button" class="btn btn-primary btn-lg btn-block mt-3" id="btnSave">Save Card</button>
+  
+          <a href="views/reviewCards.html"><button type="button" class="btn btn-primary btn-lg btn-block mt-3">Review Cards</button></a>
         </form>
       </div>
       <div class="col">
         <h2>Make a flash card</h2>
         <p>Let's make a flash card.  On the front of the flash card put the term or question you're trying to remember and the definition or answer on the back.</p>
+        <p>Number of Flashcards: <output id="numCards"></output></p>
       </div>
     </div>
   </div>
   <script src="js/flashcards.js"></script>
+  <script src="js/localForage.min.js"></script>
   <script src="js/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
